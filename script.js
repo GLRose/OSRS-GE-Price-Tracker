@@ -17,13 +17,13 @@ request.send();
 request.onload = function () {
   var data = request.response;
 
-  //Not Exactly Sure how this for loop syntax works...
   for (var i in data) {
     var itemTitles = document.createElement("h1");
-    var itemNode = document.createTextNode(data[i].name);
+    var itemNode = document.createTextNode(data[i].name+'\xa0');
     var priceNode = document.createTextNode(data[i].id);
     itemTitles.appendChild(itemNode);
     itemTitles.appendChild(priceNode);
     document.getElementById("content").appendChild(itemTitles);
   }
+  console.log(data);
 }
