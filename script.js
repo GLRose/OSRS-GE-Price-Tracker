@@ -7,7 +7,7 @@ title.appendChild(textnode);
 //Finally putting the title inside tag on the html page so that it will display on the website
 document.getElementById("root").appendChild(title);
 
-var requestURL = 'https://storage.googleapis.com/osbuddy-exchange/summary.json';
+var requestURL = 'https://raw.githubusercontent.com/osrsbox/osrsbox-db/master/docs/items-complete.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 
