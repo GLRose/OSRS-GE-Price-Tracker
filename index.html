@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
   <title>OSRS GE PRICES</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="topnav">
-    <input type="text" placeholder="Search..">
-  </div> 
+  <form method="POST" onsubmit="setTimeout(function(){window.location.reload();},10">
+    Enter Item name: <input type="text" name="data" id="data">
+    <button type="submit">Send</button>
+  </form>
   <div id="root"></div>
   <div id="content"></div>
-  <script src="script.js"></script>
+  <script src="index.js"></script>
+  <script src="routes.js"></script>
 </body>
 </html>
