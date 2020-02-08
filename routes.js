@@ -6,11 +6,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (request, response) =>  response.sendFile(`${__dirname}/index.html`));
 
-app.post('/index', (request, response) => {
+app.post('/post.html', (request, response) => {
   const postBody = request.body;
   //data refers to the json data
   console.log(postBody.data);
+  if(postBody.data == "food"){
+    console.log("yes");
+  }
 });
+
 
 //you want to use a database
 

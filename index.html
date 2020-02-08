@@ -6,13 +6,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form method="POST" onsubmit="setTimeout(function(){window.location.reload();},10">
-    Enter Item name: <input type="text" name="data" id="data">
-    <button type="submit">Send</button>
+  <form method="POST" action="/post.html">
+   Enter Item name: <input type="text" name="data" id="data">
+    <button type="submit" onClick="reload()">Send</button>
   </form>
   <div id="root"></div>
   <div id="content"></div>
-  <script src="index.js"></script>
   <script src="routes.js"></script>
+  <script src="front.js"></script>
 </body>
 </html>
